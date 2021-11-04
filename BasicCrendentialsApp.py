@@ -1,15 +1,16 @@
+# Importing time module to use sleep function in my code
 import time
-#Imporando o "modulo" de time, eu consigo usar comandos que deixam a minha aplicação em um tempo de sleep
 import level_1
 
+# Here we have some default login, I know this is not a secure aproach for this, but this does not have the intention of being a secure app, just a working app.
 global username,password
 username = "admin" #
-password = "password"  # aqui criamos variaveis globais que vão se tornar nosso username e senha padrões
+password = "password" 
 
 
-
+# This is the central menu of the aplication where you can do all the app lets you do.
 def menu():
-    #Aqui é o menu central da aplicação onde você consegue fazer tudo que ela te propõe.
+    
     global username,password
     print("Welcome To the app, here you can store your personal data \n")
     menuchoice = int(input("What do you want to do? \n See my login info (1) \n Change my login info (2) \n return to login (3) \n App credits (4) \n"))
@@ -39,10 +40,10 @@ def menu():
         input("Press any key to return to menu \n")
         menu()
 
-
-
+        
         pass
-
+    
+# This is the login system
 def login():
         global username,password
         First_check = input("Do you have an account? Y/N = ")
@@ -62,7 +63,7 @@ def login():
                     print("There is no matching username")
                     print(username)
                     print(password)
-                    input("Wait")
+                    input("Wait") 
         else:
             Second_Check = input("Do you want to register? Y/N = ")
             if Second_Check == "Y":
