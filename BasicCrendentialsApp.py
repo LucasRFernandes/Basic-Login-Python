@@ -1,6 +1,5 @@
 # Importing time module to use sleep function in my code
 import time
-import level_1
 
 # Here we have some default login, I know this is not a secure aproach for this, but this does not have the intention of being a secure app, just a working app.
 global username,password
